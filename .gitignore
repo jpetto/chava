@@ -1,0 +1,13 @@
+*.pyc
+.DS_Store
+node_modules/
+venv/
+
+imageurls.json
+assets/photos/*
+public/assets/css/*.css
+public/assets/js/*.js
+public/assets/photos/*
+public/index.html
+raw_images/processed/*
+raw_images/todo/*
