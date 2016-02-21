@@ -4,18 +4,10 @@
 
 1. Get your modules in order with a quick `npm install`.
 2. Set up a virtualenv (for running Python scripts):
-    ```
-    virtualenv -p python2.7 venv
-    source venv/bin/activate
-    ```
-3. Build `/public/index.html`:
-    ```
-    ./build-html.py
-    ```
-4. Run a wee server from the `/public/` directory:
-    ```
-    python -m SimpleHTTPServer
-    ```
+    1. `virtualenv -p python2.7 venv`
+    2. `source venv/bin/activate`
+3. Build `/public/index.html` by running `python build-html.py`.
+4. Run a wee server from the `/public/` directory: `python -m SimpleHTTPServer`
 
 ## Changing HTML/CSS/JS
 
@@ -45,13 +37,13 @@ putting things off.
 Okay. Found more photos to add to the mix? Great. Move all the photos in
 `/raw_images/processed/` into `/raw_images/todo/`. Move the new photos into
 `/raw_images/todo/` as well. Make sure you've set up and activated the virtual
-environment, then run `./catalog-images.py`.
+environment, then run `python catalog-images.py`.
 
 That's right, we're re-processing every single photo just to add a couple more!
 How's that for terrible?
 
-Next, run `./build-html.py`. This will re-generate `/public/index.html` with all
-the photos (old & new). Boom. New photos added.
+Next, run `python build-html.py`. This will re-generate `/public/index.html`
+with all the photos (old & new). Boom. New photos added.
 
 Finally, run `gulp photos`. This will optimize each photo in `/assets/photos/`
 and save them to `/public/assets/photos/`.
