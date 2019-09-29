@@ -1,8 +1,10 @@
 *.pyc
 .DS_Store
+.vscode
 node_modules/
 venv/
 
+RAW_ASSETS/
 imageurls.json
 assets/photos/*
 public/assets/css/*.css

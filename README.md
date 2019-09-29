@@ -1,3 +1,10 @@
+# IN-PROGRESS
+
+- update gulpfile and package.json to get local dev working
+- update JS so previous source of lightbox image doesn't show
+- also update to modern JS
+- use CSS grid
+
 # How to use this contraption
 
 ## Setup

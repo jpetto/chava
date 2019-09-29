@@ -14,7 +14,7 @@
     var currentImageId;
 
     // get photos to loadin'
-    var myLazyLoad = new LazyLoad({
+    new LazyLoad({
         elements_selector: '.photo'
     });
 
